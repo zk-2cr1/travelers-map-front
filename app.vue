@@ -1,17 +1,12 @@
 <template>
   <div>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+      <h1>{{ title }}</h1>
+      <button @click="$event =>titleState.changeTitle('Hello Nuxt3!')">
+        changeTitle
+      </button>
   </div>
 </template>
 <script setup>
-useHead(
-  {
-    title: "Nuxt 3 Store",  // header name
-    link: [
-      {rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"}
-    ]
-  }
-)
+const titleState = useTitle()
+const { title} = titleState
 </script>

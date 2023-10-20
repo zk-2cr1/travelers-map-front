@@ -14,6 +14,6 @@ footer {
     text-align: center;
 }
 html {
-    font-family: 'Permanent Marker', cursive;
-}
+    font-family: 'Permanent Marker', cursive; 
+    }
 </style>
